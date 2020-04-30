@@ -2,17 +2,14 @@
 
 This repo contains Colab notebooks which can be used to learn more about the Apigee Edge product.
 
-Sign up for a free Apigee trial [here](https://apigee.com/about/cp/apigee-edge-free-trial).  
-Learn more about Google Colab [here](https://colab.research.google.com/).
+In order to use these notebooks you will need access to an Apigee organisition and a Google Cloud project.
+
+1. Sign up for a free Apigee trial [here](https://apigee.com/about/cp/apigee-edge-free-trial).  
+2. Try Google Cloud for free [here](https://console.cloud.google.com/freetrial).
 
 ## Weather Demo
 [This](https://github.com/markjkelly/apigee-notebooks/blob/master/demo-files/weather-demo/weather_demo_deployment.ipynb) notebook will take you step by step through the process of deploying the Apigee Weather demo.
 Click 'Open in Colab' to get started.
-
-In order to deploy the demo you will need access to an Apigee organisition and a Google Cloud project.
-
-1. Sign up for a free Apigee trial [here](https://apigee.com/about/cp/apigee-edge-free-trial).  
-2. Try Google Cloud for free [here](https://console.cloud.google.com/freetrial).
 
 You can view a recording of the weather demo by following the YouTube link below.
 
