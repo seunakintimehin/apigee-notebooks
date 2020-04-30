@@ -1,6 +1,6 @@
 # Apigee Colab Notebooks
 
-This repo contains a collection of Colab notebooks which can be used to learn more about the Apigee Edge product.
+This repo contains Colab notebooks which can be used to learn more about the Apigee Edge product.
 
 Sign up for a free Apigee trial [here](https://apigee.com/about/cp/apigee-edge-free-trial).  
 Learn more about Google Colab [here](https://colab.research.google.com/).
