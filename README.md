@@ -14,6 +14,10 @@ You can view a recording of the weather demo by following the YouTube link below
 
 [![Weather Demo](http://img.youtube.com/vi/l7oabYEFSA8/0.jpg)](http://www.youtube.com/watch?v=l7oabYEFSA8?t=519)
 
+## Acknowledgments
+
+[Keith Danekind](https://github.com/kdanekind) for creating the Weather demo.
+
 ## Disclaimer
 These tools are not an official Google product, nor are they part of an official Google product, nor are they included under any Google support contract.
 Support is available on a best-effort basis via github.
