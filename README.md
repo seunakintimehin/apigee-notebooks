@@ -14,7 +14,7 @@ In order to deploy the demo you will need access to an Apigee organisition and a
 1. Sign up for a free Apigee trial [here](https://apigee.com/about/cp/apigee-edge-free-trial).  
 2. Try Google Cloud for free [here](https://console.cloud.google.com/freetrial).
 
-You can view a recording of the weather demo by clickin on the YouTube link below.
+You can view a recording of the weather demo by following the YouTube link below.
 
 [![Weather Demo](http://img.youtube.com/vi/l7oabYEFSA8/0.jpg)](http://www.youtube.com/watch?v=l7oabYEFSA8?t=519)
 
