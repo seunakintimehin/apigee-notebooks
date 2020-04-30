@@ -8,7 +8,7 @@ In order to use these notebooks you will need access to an Apigee organisition a
 2. Try Google Cloud for free [here](https://console.cloud.google.com/freetrial).
 
 ## Weather Demo
-[This](https://github.com/markjkelly/apigee-notebooks/blob/master/demo-files/weather-demo/weather_demo_deployment.ipynb) notebook will take you step by step through the process of deploying the Apigee Weather demo.
+[This](https://github.com/markjkelly/apigee-notebooks/blob/master/demo-files/weather-demo/weather_demo_deployment.ipynb) Colab notebook will take you step by step through the process of deploying the Apigee Weather demo.
 Click 'Open in Colab' to get started.
 
 You can view a recording of the weather demo by following the YouTube link below.
