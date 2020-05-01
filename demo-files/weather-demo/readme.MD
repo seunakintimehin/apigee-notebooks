@@ -9,6 +9,7 @@ You can view a recording of the weather demo by following the YouTube link below
 
 * [Google Colab](https://colab.research.google.com/)
 * [apigeetool](https://github.com/apigee/apigeetool-node)
+* [gcloud](https://cloud.google.com/sdk/gcloud/)
 * [apigee-edge-js](https://github.com/DinoChiesa/apigee-edge-js)
 
 ## Acknowledgments
