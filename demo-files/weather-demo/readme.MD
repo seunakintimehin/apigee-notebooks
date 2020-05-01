@@ -7,7 +7,10 @@ You can view a recording of the weather demo by following the YouTube link below
 
 ## Acknowledgments
 
-[Keith Danekind](https://github.com/kdanekind) for creating the Weather demo.
+* [Keith Danekind](https://github.com/kdanekind) for creating the Weather demo.
+* [apigeetool](https://github.com/apigee/apigeetool-node)
+* [apigee-edge-js](https://github.com/DinoChiesa/apigee-edge-js) - [Dino Chiesa](https://github.com/DinoChiesa) 
+* [apigee-edge-js-examples](https://github.com/DinoChiesa/apigee-edge-js-examples) - [Dino Chiesa](https://github.com/DinoChiesa)
 
 ## Disclaimer
 These tools are not an official Google product, nor are they part of an official Google product, nor are they included under any Google support contract.
