@@ -8,7 +8,7 @@ info:
     \ summaries from land surface stations across the globe, and is comprised of daily\
     \ climate records from over 100,000 stations in 180 countries and territories,\
     \ and includes some data from every year since 1763."
-host: "amer-poc8-test.apigee.net"
+host: ""
 schemes:
 - "https"
 basePath: "/"
@@ -23,7 +23,7 @@ paths:
       - type: "string"
         name: "near"
         required: true
-        default: "Boulder, CO"
+        default: ""
         in: "query"
         description: "A street address, landmark, or common name for a place"
       - type: "string"
@@ -31,7 +31,7 @@ paths:
         required: true
         in: "query"
         description: "Your API key"
-        default: "bCA1KLTFVSQE55AGP5iOsxXme5Z6SN9s"
+        default: ""
       responses:
         "200":
           description: "Object with list of matching stations near the place that\
