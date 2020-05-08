@@ -5,6 +5,6 @@
     <Properties/>
     <Identifier ref="request.header.some-header-name"/>
     <MessageWeight ref="request.header.weight"/>
-    <Rate>10pm</Rate>
+    <Rate>20pm</Rate>
     <UseEffectiveCount>false</UseEffectiveCount>
 </SpikeArrest>
