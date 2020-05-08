@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules>
+        <FaultRule name="QuotaViolation">
+            <Condition>(fault.name = "QuotaViolation")</Condition>
+            <Step>
+                <FaultRules/>
+                <Name>quota-error</Name>
+            </Step>
+        </FaultRule>
+        <FaultRule name="SpikeError">
+            <Condition>(fault.name = "SpikeArrestViolation")</Condition>
+            <Step>
+                <FaultRules/>
+                <Name>spike-error</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    <Flows>
+        <Flow name="stations">
+            <Description/>
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>get-apikey</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>geocode</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>get-cords</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>calc-cords</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>set-query</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>format-stations</Name>
+                </Step>
+            </Response>
+            <Condition>(flowname = "stations") or ( (proxy.pathsuffix MatchesPath "/stations") and (request.verb = "GET") )</Condition>
+        </Flow>
+        <Flow name="temp">
+            <Description/>
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>get-temp-vars</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>build-temp-query</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>save-station</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>format-data</Name>
+                </Step>
+            </Response>
+            <Condition>(flowname = "temp") or ( (proxy.pathsuffix MatchesPath "/stations/*/years/*/temp") and (request.verb = "GET") ) </Condition>
+        </Flow>
+        <Flow name="wind">
+            <Description/>
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>get-wind-vars</Name>
+                </Step>
+                <Step>
+                    <FaultRules/>
+                    <Name>build-wind-query</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>format-data</Name>
+                </Step>
+            </Response>
+            <Condition>(flowname = "wind") or ( (proxy.pathsuffix MatchesPath "/stations/*/years/*/wind") and (request.verb = "GET") ) </Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <FaultRules/>
+                <Name>verify-API-key</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
+            </Step>
+            <Step>
+                <FaultRules/>
+                <Name>Spike-Arrest</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
+            </Step>
+            <Step>
+                <FaultRules/>
+                <Name>check-quota</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
+            </Step>
+            <Step>
+                <FaultRules/>
+                <Name>Response-Cache</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
+            </Step>
+            <Step>
+                <FaultRules/>
+                <Name>gcp-auth</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <HTTPProxyConnection>
+        <BasePath>/v1/weather-history</BasePath>
+        <Properties/>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

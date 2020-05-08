@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="Response-Cache" version="SHA-512:361d8904d1781ccd5899e0c57929b470fc68e9340ed3e82d44925091bffc3afa942942822ec53bc1ebd87338bc7d4a7308b8982b33d0a246753bcbbe1fc773b8"/>
+        <VersionInfo resourceName="Spike-Arrest" version="SHA-512:e4bb389613e81ed1f1a04f3f4c92b6abf0b538f350d179e535557222f59a179c407b22e68bcc08898ae65e6484213688e3f8a513cb25e12e36e4d6ac7837d621"/>
+        <VersionInfo resourceName="build-temp-query" version="SHA-512:06f9791f62953b8db75745ebf65b527bbf906d0144880668574a911b5cc42411daa6cf6f58f328523545d45945d6fa948b680cb58af4e262b94efdf0b9c5bff1"/>
+        <VersionInfo resourceName="build-wind-query" version="SHA-512:ca57c77de82148a3210463d713ed5af49dc50976f523b96166841f1afae86d578679c97f7c07948bdba7e9fdaaf65ae82db35bd7f3e9d8877bdc02d8cdc5759b"/>
+        <VersionInfo resourceName="calc-cords" version="SHA-512:17b78e9b6f60e47adba9562122d73a47ac185968b314b659a32ed9be9d06fbf166047593134437e32eb91de42cbacc159579a40018e88f2ca7adab7cd63f90ae"/>
+        <VersionInfo resourceName="check-quota" version="SHA-512:41826d915989e2954639ae0f24d4ee03395e0b330a39206b297c962673b97e25b48dfbe586170fee9cefe8802c935b9e41105698ee51b416efef1ea5b87ea3dd"/>
+        <VersionInfo resourceName="format-data" version="SHA-512:dcd1ec1529efd22c67d6710e02d5f0fa8a9543d7b74f198d4830bcc99823317e5f35bf99b343f9ba8e4756fd3dfe78d9dde135f8b28ca096a454ad4b32531d1f"/>
+        <VersionInfo resourceName="format-stations" version="SHA-512:e8672518cb1cb77128aa3da8aa0890fd6b118b7eec3ab779d109a590f78ec1d6998010d25696e2a46e1c6df6b8d22623208d827fa49dba33f9e0bc70f065f12c"/>
+        <VersionInfo resourceName="gcp-auth" version="SHA-512:5e48715625cd9a2fa77646505622e99ca22974fcb08341bdc44bdbc5f8ba2b4f4baf69bd282514776b59f72f13df9587fb88e80613e8389eb7733b7d0a74e715"/>
+        <VersionInfo resourceName="geocode" version="SHA-512:ac0687a3baa15d0fa2d459c94c2a8ffc877741ac774c91d709889fb4f1bcf36b63fd5367fc5ea02a2bf6c2ffd8b35b6ffc9d6575bd20e5361d6c3c1eb10270b4"/>
+        <VersionInfo resourceName="get-apikey" version="SHA-512:4a9a7b157246914df97c2a5fb1beed861d67ae0432d83964129d5fe2f69debc02184842aebe6a7fd330bcc5d19fb610eb32cc9678ca63ffb3777f82c8a4d0a00"/>
+        <VersionInfo resourceName="get-cords" version="SHA-512:6ea135945931951557157afb7fc9ab5deb30e2dc43c1f607bfa623aa1d2b0f8fa34f37290ee24a7d4feb65dbd5a82ec94c82ef064617aae98e800c8a31330004"/>
+        <VersionInfo resourceName="get-temp-vars" version="SHA-512:a9018bdbf7903b2f052e5bb6c6c4bf0e528c25b068396b54249df0c1065187d44bf404c9df0a1499112e40e2c9a969e5728200cb35bc73086ad66dd4441c182c"/>
+        <VersionInfo resourceName="get-wind-vars" version="SHA-512:423a7bed76d5daa7f40a17dd029963542a40a88ca2b7fb64a527c5ec958e8da27677d2c29a9eb2f3ff75e494e35872b2e3a2bf9d94761585efecdae419443127"/>
+        <VersionInfo resourceName="pathsuffix" version="SHA-512:371803513b9591acaea91fe47d08c9b0c768cd9a516dbf9fb59e2cbced4e5df7b741d79d07f40473588a0bdf448fd424b44103fd2ddc0a509a5471ee2c7cba77"/>
+        <VersionInfo resourceName="quota-error" version="SHA-512:95c02a1e043519e237b1590e27539fb62ae064930ba927f6f288e01339ad08c5622d53a80060a09090dc2ac1d146fd3ca06368f28bb93f1cd21e5bb2bd74a91c"/>
+        <VersionInfo resourceName="save-station" version="SHA-512:19f87b97404725bfb382c71453351832539dc6517606334821125080eb1ab71a4c20386ffa5ae6557f679c57de6cb4cde01c24ae99ea5afaf6c5461f7f58999a"/>
+        <VersionInfo resourceName="set-query" version="SHA-512:f8f2671657af2f30ee50563a5e5ed6a32b50251de777c210626554acee5aa4294c7b3a555e84a6294e0d31081c4b0522d3f8305937e2e1e1ffe6d349d7556661"/>
+        <VersionInfo resourceName="spike-error" version="SHA-512:d345183f963732c44fcd6bb6db4959a5e80237f728eda19d8ce6382d3a594093bef7342b8e5966997109b7237639351b6358d4dae491bd34b4dec9d35260d1ab"/>
+        <VersionInfo resourceName="verify-API-key" version="SHA-512:1cb1d77d7c12a2ca72eefc34c7004c1d94f8a76568aab24be9c43650222a15d44e5a675ce581cc6edf56cd89e986f74ae52d2a1f30476203e749275fca7a183b"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:6b455dd2a4b61855ea8decf86625a80f3b4b1f6f6a8bad03645bc24184e48b74f0c2c8c0948cb6736d039e7f6415c4eb252ae25733caa9671bae50115951809e"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://boundingbox.js" version="SHA-512:a15aca668e2c56e0413a367a3d60a6ea35007647bcb1ba00e746e9ec86142bcb9d252270b7dff1d46187daf96117b6fee2fdf6ae629bf7aaabb6598088c3b487"/>
+        <VersionInfo resourceName="jsc://formatdata.js" version="SHA-512:68fce603f5156ec266f8d245e9e1dbb7f4a2e520971d226a27fb1416acce9a97cac19952881f70dcfd9bae879c0be581eecca28bc92382b9a741309616f1f656"/>
+        <VersionInfo resourceName="jsc://formatstations.js" version="SHA-512:7853c9257a020e46f2aaea254cb0e67acbceadda1d116142ded1883cad0d578c5e3699a54df3b92819deba27da4adf7db51230d1d4a10c86e59250a7c990b80c"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:03dabfd1b968f222cadc31835dcb6716e199765a7a7a02ca441953dfba84cda1d67398177c439b8a91a05983285c8a2cd618b20593ce52508ae4934b0e1f7e4f"/>
+    </TargetEndpoints>
+</Manifest>

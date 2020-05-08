@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations name="KVM-Get-GCP-PrivateKey" mapIdentifier="secrets1">
+    <Scope>environment</Scope>
+    <Get assignTo="private.GCP.privKeyPem">
+        <Key>
+            <Parameter>GCP.privKeyPem</Parameter>
+        </Key>
+    </Get>
+</KeyValueMapOperations>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations name="KVM-Get-GCP-Settings" mapIdentifier="settings1">
+    <Scope>environment</Scope>
+    <ExpiryTimeInSecs>30</ExpiryTimeInSecs>
+    <!-- these gets will be cached -->
+    <Get assignTo="GCP.jwt_issuer">
+        <Key>
+            <Parameter>GCP.jwt_issuer</Parameter>
+        </Key>
+    </Get>
+</KeyValueMapOperations>

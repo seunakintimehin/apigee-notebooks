@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-query">
+    <DisplayName>set query</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">
+        {
+          "kind": "bigquery#queryRequest",
+          "query": "SELECT id, name, state, latitude, longitude, hcn_crn_flag FROM [bigquery-public-data:ghcn_d.ghcnd_stations] WHERE latitude &gt; {minLat} AND latitude &lt; {maxLat} AND longitude &gt; {minLon} AND longitude &lt; {maxLon}",
+          "defaultDataset": {
+            "datasetId": "ghcn_d",
+            "projectId": "bap-apac-weather-demo"
+          },
+          "useQueryCache": true
+        }
+        </Payload>
+        <Verb>POST</Verb>
+    </Set>
+    <AssignVariable>
+        <Name>flowname</Name>
+        <Value>stations</Value>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo type="request" transport="http" createNew="false"></AssignTo>
+</AssignMessage>

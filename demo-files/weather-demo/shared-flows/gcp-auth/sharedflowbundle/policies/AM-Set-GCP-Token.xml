@@ -1,0 +1,7 @@
+<AssignMessage name='AM-Set-GCP-Token'>
+  <AssignVariable>
+    <Name>GCP.token</Name>
+    <Ref>GCP.newtoken</Ref>
+  </AssignVariable>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+</AssignMessage>

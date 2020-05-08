@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="4" name="weather-history">
+    <Basepaths>/v1/weather-history</Basepaths>
+    <Basepaths>/v1/weather-history</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1588831482311</CreatedAt>
+    <CreatedBy>markjkelly@google.com</CreatedBy>
+    <Description>Delivers historical weather</Description>
+    <DisplayName>weather-history</DisplayName>
+    <LastModifiedAt>1588831482311</LastModifiedAt>
+    <LastModifiedBy>markjkelly@google.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:888937c431930898c4d4fe75275404c906397c83e34cfe8ff0923e279c82ce783566a3ead68d90bfdcc479e02017756e02970fb031a4f0d6dc6e7486b3f91f2d</ManifestVersion>
+    <Policies>
+        <Policy>Response-Cache</Policy>
+        <Policy>Spike-Arrest</Policy>
+        <Policy>build-temp-query</Policy>
+        <Policy>build-wind-query</Policy>
+        <Policy>calc-cords</Policy>
+        <Policy>check-quota</Policy>
+        <Policy>format-data</Policy>
+        <Policy>format-stations</Policy>
+        <Policy>gcp-auth</Policy>
+        <Policy>geocode</Policy>
+        <Policy>get-apikey</Policy>
+        <Policy>get-cords</Policy>
+        <Policy>get-temp-vars</Policy>
+        <Policy>get-wind-vars</Policy>
+        <Policy>pathsuffix</Policy>
+        <Policy>quota-error</Policy>
+        <Policy>save-station</Policy>
+        <Policy>set-query</Policy>
+        <Policy>spike-error</Policy>
+        <Policy>verify-API-key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://boundingbox.js</Resource>
+        <Resource>jsc://formatdata.js</Resource>
+        <Resource>jsc://formatstations.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

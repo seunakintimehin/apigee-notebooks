@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateJWT async="false" continueOnError="false" enabled="true" name="Generate-JWT">
+    <DisplayName>Generate JWT</DisplayName>
+    <Algorithm>RS256</Algorithm>
+    <PrivateKey>
+        <Value ref="private.GCP.privKeyPem"/>
+    </PrivateKey>
+    <Issuer ref="GCP.jwt_issuer"/>
+    <Audience>https://www.googleapis.com/oauth2/v4/token</Audience>
+    <ExpiresIn>30m</ExpiresIn>
+    <AdditionalClaims>
+        <Claim name="scope" type="string">https://www.googleapis.com/auth/bigquery</Claim>
+    </AdditionalClaims>
+    <OutputVariable>jwt_jwt</OutputVariable>
+</GenerateJWT>

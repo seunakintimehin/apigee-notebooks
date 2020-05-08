@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-Set-GCP-Token" version="SHA-512:af2560c862018c4488c9cb2fbbe507a216d5ddcce046e64ad01cce3f73445f8bb82873d1278759b5a8fe9a7e37d0d82f47e3622839bac8c4df07a4e06eec9084"/>
+        <VersionInfo resourceName="Cache-Get-GCP-Token" version="SHA-512:9b5cc0d30d6052659432cc178673dfa807c602f016b3076bf5539bcffc4661213e0b62995958f3a8ddaae397e8d969e9c7827bdc37b56bdd421a9bbbe77d573e"/>
+        <VersionInfo resourceName="Cache-Put-GCP-Token" version="SHA-512:c60abff284706a2494378f02edfa6c5b96d60c8cd34bcba27f549f6794137a24d422961980f9db3f14517aa573044abf25bf4cd5fdfb8dc537326938bdc2465b"/>
+        <VersionInfo resourceName="Extract-GCP-AccessToken" version="SHA-512:7e8e9241d0b7c79d55af0201401297b834131d37e9553c84e0f5c63210c92c7c6cc6be1ab57b9bd7ea219a463eceac15e7d31ae5bc151fa41f9a0f5efeb1ce6f"/>
+        <VersionInfo resourceName="Generate-JWT" version="SHA-512:658b57c3df42a0374b2c62f29088c86ec9bc09ba45b7f4baa73a1acc037aee5eef04aafd59359363c8b41b191a38485c6f23611ae3c3b4db73cbf0c6161c8e47"/>
+        <VersionInfo resourceName="JS-Adjust-Expiry" version="SHA-512:8fda1c773467339c6f52e0c9cd1a0aa3cdc4ff4b9437483303a7d6cd4f8bf58ebe87e17bfc034555a40afe00e43a75dad96c431b7c244e9fd8a5839584ae1c60"/>
+        <VersionInfo resourceName="KVM-Get-GCP-PrivateKey" version="SHA-512:fde80b38028e16f8a152364d89ee57d4f922636809e4445a192f13285700ca517a05be3246e136207cb435b02daac275e61d6756c0616329ec928e84828c6867"/>
+        <VersionInfo resourceName="KVM-Get-GCP-Settings" version="SHA-512:cfcfadf152023e7e555bfe4ff01f1f65f04cbcde7bf14cf31d1c8372259a269e22de339228879ec9baf89b3b1e64e676c24d8613659fb0e22c1b3375e5947618"/>
+        <VersionInfo resourceName="RF-No-AccessToken" version="SHA-512:d696c0a660a066bcaf90cd073fdbde09567129cff63e51b1990e2385f3c9262d167abd9ce2cb99d235b5abe4351bd429ca04bd9843bc460b23970cce49b94867"/>
+        <VersionInfo resourceName="SC-Obtain-GCP-AccessToken" version="SHA-512:b8dfb73ecb44fe725cf59066bfc8a2109c0bbba6e3a44f07f5fc73fc82d1caaf8f3158a93d62da7987b2c66b1b69c4ae6de95a4e3814ee3d1afdd87efd1f2b3c"/>
+        <VersionInfo resourceName="set-header" version="SHA-512:6720ede351f48f857bf6a45bcf03f3db0975df1bbddf6e75a390799bc5c091e7c4806f9b118bf00dfe1e86b12a9f6612bbde7b23207f877be787eb4b2adc2e05"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources>
+        <VersionInfo resourceName="jsc://adjust-Expiry.js" version="SHA-512:525d0652fcedec7a2c143282c5ef3c7a1b08ed9e5ed33a42fe48048264f76344f4799c293048be0fee45da3ca09916550b0b67fbf97a3b71e961a28e7d6cd856"/>
+    </Resources>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:81ab2c51cac9523da2a7167d9c3e2f2deabc2c54ec2ec930b20924e045b037fe8067321a75872be11ba360888f0f6cb5db9d8f7068c6a70bd89ba896efe1a46a"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <!-- see if there is a viable token in cache -->
+        <Name>Cache-Get-GCP-Token</Name>
+    </Step>
+    <Step>
+        <!-- no token? get the settings -->
+        <Name>KVM-Get-GCP-Settings</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <!-- no token? get the private key, we're gonna need it -->
+        <Name>KVM-Get-GCP-PrivateKey</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <Name>Generate-JWT</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <!-- no token? send the request to the Google OAuth service -->
+        <Name>SC-Obtain-GCP-AccessToken</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <!-- no token? extract the new token and expiry from the response from the Google OAuth service -->
+        <Name>Extract-GCP-AccessToken</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <!-- no token? adjust the expiry downward to be conservative with cache TTL -->
+        <Name>JS-Adjust-Expiry</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <!-- no token? check for failure (no new token) -->
+        <Name>RF-No-AccessToken</Name>
+        <Condition>(GCP.token = null) and (GCP.newtoken = null)</Condition>
+    </Step>
+    <Step>
+        <!-- new token? insert it into cache -->
+        <Name>Cache-Put-GCP-Token</Name>
+        <Condition>(GCP.token = null) and (GCP.newtoken != null)</Condition>
+    </Step>
+    <Step>
+        <!-- new token? copy it to the context variable we want -->
+        <Name>AM-Set-GCP-Token</Name>
+        <Condition>GCP.token = null</Condition>
+    </Step>
+    <Step>
+        <Name>set-header</Name>
+    </Step>
+</SharedFlow>

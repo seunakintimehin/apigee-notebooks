@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="3" name="gcp-auth-v2">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1524775371754</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>Get an access token for GCP using a service account</Description>
+    <DisplayName>gcp-auth</DisplayName>
+    <LastModifiedAt>1525058766374</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:6012b92859b9958869c7f6c4e5051bb9ba7f4bdca67063fbd8ad9a9a6ad54514cc5d2be960ffddcff22927873365bf4bd8a9cb32d1209d4bdce64942e4df2264</ManifestVersion>
+    <Policies>
+        <Policy>AM-Set-GCP-Token</Policy>
+        <Policy>Cache-Get-GCP-Token</Policy>
+        <Policy>Cache-Put-GCP-Token</Policy>
+        <Policy>Extract-GCP-AccessToken</Policy>
+        <Policy>Generate-JWT</Policy>
+        <Policy>JS-Adjust-Expiry</Policy>
+        <Policy>KVM-Get-GCP-PrivateKey</Policy>
+        <Policy>KVM-Get-GCP-Settings</Policy>
+        <Policy>RF-No-AccessToken</Policy>
+        <Policy>SC-Obtain-GCP-AccessToken</Policy>
+        <Policy>set-header</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://adjust-Expiry.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>

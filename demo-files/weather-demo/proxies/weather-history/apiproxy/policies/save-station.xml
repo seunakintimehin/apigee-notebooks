@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StatisticsCollector async="false" continueOnError="false" enabled="true" name="save-station">
+    <DisplayName>save station</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Statistics>
+        <Statistic name="weather_station" ref="station" type="STRING">unknown</Statistic>
+    </Statistics>
+</StatisticsCollector>

@@ -1,0 +1,13 @@
+<PopulateCache name='Cache-Put-GCP-Token'>
+  <CacheResource>cache1</CacheResource>
+  <Scope>Application</Scope>
+  <Source>GCP.newtoken</Source>
+  <CacheKey>
+    <!-- <Prefix>GCP.token</Prefix> -->
+    <KeyFragment>GCP.token</KeyFragment>
+    <!-- <KeyFragment ref='variable.containing.keyfrag' /> -->
+  </CacheKey>
+  <ExpirySettings>
+    <TimeoutInSec ref='GCP.expires_in'>3540</TimeoutInSec> <!-- 3540 = 3600-60 = default ttl -->
+  </ExpirySettings>
+</PopulateCache>
